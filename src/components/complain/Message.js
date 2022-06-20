@@ -72,11 +72,8 @@ export default function Message({ contact, user, messages, sendMessage }) {
           </div>
         </>
       ) : (
-        <div
-          style={{ height: "89.5vh" }}
-          className="h4 d-flex justify-content-center align-items-center"
-        >
-          No Message
+        <div className="noMessage">
+          <h1>No Message</h1>
         </div>
       )}
     </>

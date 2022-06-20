@@ -81,6 +81,21 @@
   border-left: 1px solid #c4c4c4;
 }
 
+.complain .message .noMessage {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.complain .message .noMessage h1 {
+  font-weight: 400;
+  font-size: 250%;
+  line-height: 22px;
+  color: #000000;
+}
+
 /* message header */
 .complain .message .messageHeader {
   background-color: #c4c4c4;
