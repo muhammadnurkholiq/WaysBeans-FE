@@ -1,0 +1,75 @@
+.authNavbar {
+  background-color: "#F5F5F5";
+  box-shadow: 0px 10px 5px 2px rgba(0, 0, 0, 0.15);
+  margin-bottom: 5vh;
+  padding: 2vh;
+}
+
+.authNavbar .container .navbar-brand:hover {
+  cursor: pointer;
+}
+
+.authNavbar .container .navbar-brand img {
+  width: 10vw;
+}
+
+.authNavbar .container .navbar-nav {
+  gap: 1vw;
+}
+
+.authNavbar .container .navbar-nav .btn {
+  width: 7vw;
+  padding: 1vh;
+  letter-spacing: 0.1vw;
+}
+
+.authNavbar .container .navbar-nav .btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.authNavbar .container .navbar-nav .btnLogin {
+  background-color: #fff;
+  border: 3px solid #613d2b;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #613d2b;
+}
+
+.authNavbar .container .navbar-nav .btnRegister {
+  background-color: #613d2b;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #fff;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .authNavbar .container button:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+  .authNavbar .container .navbar-brand img {
+    width: 35vw;
+  }
+
+  .authNavbar .container .navbar-nav .btn {
+    width: 50%;
+    letter-spacing: 0.1vw;
+    margin: 4vh auto;
+  }
+
+  .authNavbar .container .navbar-nav .btnLogin {
+    margin-top: 5vh;
+  }
+
+  .authNavbar .container .navbar-nav .btnRegister {
+    margin-top: -3vh;
+    margin-bottom: 1vh;
+  }
+}

@@ -1,0 +1,421 @@
+.profile {
+  margin-top: 7vh;
+  margin-bottom: 4vh;
+}
+
+/* profile side */
+.profile .profileSide .profileHeader {
+  width: 102%;
+  margin-bottom: 2vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-right: 1vw;
+}
+
+.profile .profileSide .profileHeader h1 {
+  font-weight: 900;
+  font-size: 200%;
+  line-height: 150%;
+  color: #613d2b;
+}
+
+.profile .profileSide .profileHeader .buttons {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  gap: 1.5vw;
+}
+
+.profile .profileSide .profileHeader button {
+  background-color: #f00000;
+  height: 20%;
+  font-weight: 900;
+  font-size: 100%;
+  line-height: 150%;
+  color: #fff;
+  background-color: #613d2b;
+  margin-top: 1vh;
+}
+
+.profile .profileSide .profileHeader .buttons .btn-cancel {
+  border: 1px solid #f00000;
+  background-color: transparent;
+  color: #000;
+}
+
+.profile .profileSide .profileHeader .buttons .btn-cancel:hover {
+  background-color: #f00000;
+  color: #fff;
+}
+
+.profile .profileSide .profileHeader button:hover {
+  background-color: #3c271c;
+}
+
+.profile .profileSide .profileHeader button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.profile .profileSide .imgSide {
+  text-align: center;
+}
+
+.profile .profileSide .imgSide img {
+  width: 100%;
+  height: 52vh;
+  box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+}
+
+.profile .profileSide .imgSide label {
+  background-color: #613d2b;
+  width: 70%;
+  margin-top: 2vh;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.15);
+}
+
+.profile .profileSide .imgSide label h1 {
+  font-weight: 800;
+  font-size: 100%;
+  color: #fff;
+  text-align: center;
+  padding: 1vh 0 0.3vh;
+}
+
+.profile .profileSide .imgSide label:hover {
+  cursor: pointer;
+  background-color: #402c21;
+}
+
+.profile .detailSide .detail {
+  margin-bottom: 3vh;
+}
+
+.profile .detailSide .detail .title {
+  font-weight: 800;
+  font-size: 140%;
+  line-height: 150%;
+  color: #613d2b;
+}
+
+.profile .detailSide .detail .titleData {
+  font-weight: 400;
+  font-size: 100%;
+  line-height: 150%;
+  color: #000000;
+}
+
+.profile .detailSide .detail .desc {
+  padding-right: 2vw;
+  height: 10vh;
+  margin-bottom: -1vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.profile .detailSide .detail input {
+  width: 99%;
+  padding: 1vh 1vw;
+  background-color: rgba(97, 61, 43, 0.25);
+  border: 2px solid #613d2b;
+  border-radius: 5px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 100%;
+  line-height: 100%;
+  color: #000;
+}
+
+.profile .detailSide .detail input:disabled {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.profile .detailSide .detail input:-webkit-autofill,
+.profile .detailSide .detail input input:-webkit-autofill:focus {
+  transition: background-color 600000s 0s, color 600000s 0s;
+}
+
+.profile .detailSide .detail textarea {
+  width: 100%;
+  height: 11.7vh;
+  margin-bottom: -1.5vh;
+  padding: 1vh 1vw;
+  background-color: rgba(97, 61, 43, 0.25);
+  border: 2px solid #613d2b;
+  border-radius: 5px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 100%;
+  line-height: 130%;
+  color: #000;
+  resize: none;
+}
+
+.profile .detailSide .detail textarea:-webkit-autofill,
+.profile .detailSide .detail textarea:-webkit-autofill:focus {
+  transition: background-color 600000s 0s, color 600000s 0s;
+}
+
+/* transaction side */
+.profile .transactionSide {
+  border-left: 2px solid #613d2b;
+}
+
+.profile .transactionSide .transactionHeader h1 {
+  font-weight: 900;
+  font-size: 200%;
+  line-height: 150%;
+  color: #613d2b;
+}
+
+.profile .transactionSide .transactionList {
+  width: 100%;
+  height: 62vh;
+  overflow-y: auto;
+  padding-top: 1vh;
+  padding-left: 1.1vw;
+}
+
+.profile .transactionSide .transactionList .noData {
+  width: 100%;
+  height: 99%;
+}
+
+.profile .transactionSide .transactionList .noData img {
+  width: 60%;
+  margin-bottom: 1vh;
+}
+
+.profile .transactionSide .transactionList .noData h1 {
+  font-weight: 900;
+  font-size: 170%;
+  line-height: 150%;
+  color: #613d2b;
+}
+
+.profile .transactionSide .content {
+  width: 100%;
+  background-color: #f6e6da;
+  border-radius: 5px;
+  padding-left: 0.5vw;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  margin-bottom: 2vh;
+  box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.15);
+}
+
+.profile .transactionSide .content .imgSide img {
+  width: 100%;
+  height: 100%;
+}
+
+.profile .transactionSide .content .detailSide {
+  padding-top: 0.5vh;
+}
+
+.profile .transactionSide .content .detailSide .detailName {
+  font-weight: 900;
+  font-size: 120%;
+  line-height: 100%;
+  color: #613d2b;
+  margin-bottom: 2vh;
+}
+
+.profile .transactionSide .content .detailSide .detailDate {
+  font-weight: 700;
+  font-size: 75%;
+  line-height: 100%;
+  color: #613d2b;
+  margin-bottom: 4vh;
+}
+
+.profile .transactionSide .content .detailSide .detailPrice {
+  font-weight: 500;
+  font-size: 75%;
+  line-height: 100%;
+  color: #974a4a;
+  margin-bottom: 1vh;
+}
+
+.profile .transactionSide .content .detailSide .detailQty {
+  font-weight: 500;
+  font-size: 75%;
+  line-height: 100%;
+  color: #974a4a;
+  margin-bottom: 2vh;
+}
+
+.profile .transactionSide .content .detailSide .detailSubTotal {
+  font-weight: 700;
+  font-size: 75%;
+  line-height: 100%;
+  color: #974a4a;
+}
+
+.profile .transactionSide .content .statusSide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile .transactionSide .content .statusSide img {
+  width: 40%;
+  margin-bottom: 1.5vh;
+}
+
+.profile .transactionSide .content .statusSide .status {
+  width: 100%;
+  font-weight: 700;
+  font-size: 70%;
+  line-height: 100%;
+  text-align: center;
+  padding: 1vh 0 0.8vh;
+  border-radius: 3px;
+  letter-spacing: 0.05vw;
+}
+
+.profile .transactionSide .content .statusSide .statusApprove {
+  background-color: #feaa2cc9;
+  color: #f7f4ef;
+}
+
+.profile .transactionSide .content .statusSide .statusSuccess {
+  background-color: #68a8419e;
+  color: #dfffc9;
+}
+
+.profile .transactionSide .content .statusSide .statusCancel {
+  background-color: #ec2525;
+  color: #fff;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .profile {
+    margin-top: -1vh;
+    margin-bottom: -5vh;
+  }
+
+  /* profile side */
+  .profile .profileSide .profileHeader h1 {
+    font-size: 130%;
+  }
+
+  .profile .profileSide .profileHeader button {
+    margin-top: 0;
+    height: 20%;
+    font-size: 80%;
+  }
+
+  .profile .profileSide .imgSide {
+    width: 50%;
+    height: 35vh;
+    margin: 1vh auto 3vh;
+  }
+
+  .profile .profileSide .imgSide img {
+    width: 100%;
+    height: 90%;
+  }
+
+  .profile .profileSide .imgSide label {
+    width: 100%;
+  }
+
+  .profile .profileSide .imgSide label h1 {
+    font-size: 60%;
+    padding: 1.5vh 0 0.1vh;
+  }
+
+  .profile .detailSide .detail .title {
+    font-size: 100%;
+  }
+
+  .profile .detailSide .detail .titleData {
+    font-size: 80%;
+  }
+
+  .profile .detailSide .detail .desc {
+    height: 11.5vh;
+  }
+
+  .profile .detailSide .detail input {
+    font-size: 80%;
+    padding: 1.5vh 1.5vw;
+  }
+
+  .profile .detailSide .detail textarea {
+    font-size: 80%;
+    padding: 1.5vh 1.5vw;
+  }
+
+  /* transaction side */
+  .profile .transactionSide {
+    border: none;
+    margin-top: 2vh;
+  }
+
+  .profile .transactionSide .transactionList {
+    height: 55vh;
+    padding-left: 0;
+    padding-right: 1vw;
+  }
+
+  .profile .transactionSide .content {
+    width: 96%;
+    margin: 0 auto 2vh;
+  }
+
+  .profile .transactionSide .transactionHeader h1 {
+    font-size: 130%;
+    text-align: center;
+  }
+
+  .profile .transactionSide .content .imgSide {
+    width: 30%;
+    height: 100%;
+  }
+
+  .profile .transactionSide .content .detailSide {
+    width: 40%;
+  }
+
+  .profile .transactionSide .content .detailSide .detailName {
+    font-size: 60%;
+    margin-bottom: 1vh;
+  }
+
+  .profile .transactionSide .content .detailSide .detailDate {
+    font-size: 45%;
+    margin-bottom: 3vh;
+  }
+
+  .profile .transactionSide .content .detailSide .detailPrice {
+    font-size: 40%;
+  }
+
+  .profile .transactionSide .content .detailSide .detailQty {
+    font-size: 40%;
+  }
+
+  .profile .transactionSide .content .detailSide .detailSubTotal {
+    font-size: 45%;
+  }
+
+  .profile .transactionSide .content .statusSide {
+    width: 30%;
+  }
+
+  .profile .transactionSide .content .statusSide img {
+    width: 40%;
+    margin-bottom: 1.5vh;
+  }
+
+  .profile .transactionSide .content .statusSide .status {
+    font-size: 40%;
+  }
+}

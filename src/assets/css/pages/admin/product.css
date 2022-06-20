@@ -1,0 +1,174 @@
+.product {
+  width: 100%;
+  margin-bottom: 10vh;
+}
+
+.product .productHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.product .productHeader h1 {
+  font-weight: 800;
+  font-size: 200%;
+  line-height: 100%;
+  color: #613d2b;
+}
+
+.product .productHeader button {
+  width: 13%;
+  border: none;
+  border-radius: 10px;
+  background-color: #613d2b;
+  color: #fff;
+  font-weight: 800;
+  font-size: 90%;
+  line-height: 100%;
+}
+
+.product .productHeader button:hover {
+  background-color: #3d271c;
+}
+
+.product .productHeader button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.product .container table {
+  width: 100%;
+  margin-top: 3vh;
+}
+
+.product .container table thead {
+  background-color: #e5e5e5;
+}
+
+.product .container table thead tr {
+  border: none;
+}
+
+.product .container table thead tr th {
+  border: 1px solid #828282;
+  padding: 1vh 1vw;
+  font-weight: 700;
+  font-size: 100%;
+  line-height: 100%;
+  color: #000000;
+  text-align: center;
+}
+
+.product .container table tbody tr td {
+  border: 1px solid #828282;
+  height: 15vh;
+  padding: 2vh 1vw;
+  font-weight: 500;
+  font-size: 90%;
+  line-height: 100%;
+  color: #000000;
+  text-align: center;
+}
+
+.product .container table tbody tr .tableNo {
+  width: 5%;
+}
+
+.product .container table tbody tr .tableImage {
+  width: 12%;
+}
+
+.product .container table tbody tr .tableImage img {
+  width: 60%;
+  height: 100%;
+}
+
+.product .container table tbody tr .tableName {
+  width: 20;
+}
+
+.product .container table tbody tr .tableStock {
+  width: 8%;
+}
+
+.product .container table tbody tr .tablePrice {
+  width: 15%;
+}
+
+.product .container table tbody tr .tableDesc {
+  width: 20%;
+}
+
+.product .container table tbody tr .tableAction {
+  width: 20%;
+}
+
+.product .container table tbody tr td .btn {
+  width: 40%;
+  padding: 1.2vh 0;
+  font-weight: 900;
+  font-size: 90%;
+  line-height: 100%;
+  color: #ffffff;
+  border-radius: 5px;
+  margin: 0 0.1vw;
+}
+
+.product .container table tbody tr td .btn:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.product .container table tbody tr td .btn-edit {
+  background-color: #0acf83;
+}
+
+.product .container table tbody tr td .btn-edit:hover {
+  background-color: #08a96b;
+}
+
+.product .container table tbody tr td .btn-delete {
+  background-color: #ff0742;
+}
+
+.product .container table tbody tr td .btn-delete:hover {
+  background-color: #dd0034;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .product {
+    margin-bottom: -4vh;
+  }
+
+  .product .productHeader h1 {
+    font-size: 130%;
+  }
+
+  .product .productHeader button {
+    width: 25%;
+    font-size: 50%;
+  }
+
+  .product .container table thead tr th {
+    font-size: 33%;
+  }
+
+  .product .container table tbody tr td {
+    font-size: 30%;
+    height: 11vh;
+  }
+
+  .product .container table tbody tr .tableImage img {
+    width: 70%;
+    height: 5.3vh;
+  }
+
+  .product .container table tbody tr td .btn {
+    width: 80%;
+    padding: 0.8vh 0 0.7vh;
+    font-size: 100%;
+    text-align: center !important;
+    margin: 0.1vh 0;
+  }
+}

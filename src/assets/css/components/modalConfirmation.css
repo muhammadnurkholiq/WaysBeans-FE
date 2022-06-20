@@ -1,0 +1,50 @@
+.modal-confirmation .modal-dialog .modal-content {
+  padding: 3vh 1vw;
+  margin-top: 25vh;
+}
+
+.modal-confirmation .modal-dialog .modal-content .modal-title {
+  font-weight: 900;
+  font-size: 200%;
+  line-height: 100%;
+  color: #613d2b;
+  margin-bottom: 5vh;
+}
+
+.modal-confirmation .modal-dialog .modal-content .modal-info {
+  font-weight: 400;
+  font-size: 110%;
+  line-height: 100%;
+  color: #462d20;
+  margin-bottom: 5vh;
+}
+
+.modal-confirmation .modal-dialog .modal-content .modal-btns {
+  display: flex;
+  flex-direction: flex;
+  justify-content: flex-end;
+  gap: 1vw;
+}
+
+.modal-confirmation .modal-dialog .modal-content .modal-btns button {
+  width: 25%;
+}
+
+.modal-confirmation .modal-dialog .modal-content .modal-btns .btn-yes {
+  border: 1px solid #b70000;
+}
+
+.modal-confirmation .modal-dialog .modal-content .modal-btns .btn-yes:hover {
+  border: 1px solid #b70000;
+  background-color: #b70000;
+  color: #fff;
+}
+
+.modal-confirmation .modal-dialog .modal-content .modal-btns .btn-no {
+  background-color: #613d2b;
+  color: #fff;
+}
+
+.modal-confirmation .modal-dialog .modal-content .modal-btns .btn-no:hover {
+  background-color: #342218;
+}

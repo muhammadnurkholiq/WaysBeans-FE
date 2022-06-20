@@ -1,0 +1,117 @@
+.modal .modal-dialog {
+  margin-top: 10vh;
+}
+
+.modal .modal-dialog .modal-content {
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.modal .modal-dialog .modal-content .modal-header {
+  width: 100%;
+  border: none;
+  margin-top: 1vh;
+  margin-bottom: -5vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal .modal-dialog .modal-content .modal-header h1 {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 250%;
+  line-height: 100%;
+  color: #613d2b;
+}
+
+.modal .modal-dialog .modal-content .modal-header .alert {
+  width: 100%;
+  text-align: center;
+  margin-top: 2vh;
+  margin-bottom: -1vh;
+  font-weight: 700;
+}
+
+.modal .modal-dialog .modal-content .modal-body {
+  margin-top: 2vh;
+}
+
+.modal .modal-dialog .modal-content .modal-body form input {
+  width: 100%;
+  height: 8vh;
+  background-color: rgba(97, 61, 43, 0.25);
+  border: 2px solid #613d2b;
+  border-radius: 5px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 25px;
+  color: #000;
+}
+
+.modal .modal-dialog .modal-content .modal-body form input:-webkit-autofill,
+.modal
+  .modal-dialog
+  .modal-content
+  .modal-body
+  form
+  input:-webkit-autofill:focus {
+  transition: background-color 600000s 0s, color 600000s 0s;
+}
+
+.modal .modal-dialog .modal-content .modal-body form button {
+  width: 100%;
+  color: #fff;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 25px;
+  padding: 2vh;
+  background-color: #613d2b;
+  border-radius: 5px;
+}
+
+.modal .modal-dialog .modal-content .modal-body form button:hover {
+  background-color: #442a1e;
+}
+
+.modal .modal-dialog .modal-content .modal-body form button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.modal .modal-dialog .modal-content .modal-body form p {
+  font-weight: 400;
+  font-size: 100%;
+  line-height: 25px;
+  color: #000000;
+  text-align: center;
+  margin-top: 3vh;
+}
+
+.modal .modal-dialog .modal-content .modal-body form p span {
+  font-weight: 900;
+  font-size: 100%;
+}
+
+.modal .modal-dialog .modal-content .modal-body form p span:hover {
+  cursor: pointer;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .modal .modal-dialog .modal-content {
+    width: 90%;
+    margin: auto;
+  }
+
+  .modal .modal-dialog .modal-content .modal-body form {
+    text-align: center;
+  }
+
+  .modal .modal-dialog .modal-content .modal-body form button {
+    width: 100%;
+    font-size: 100%;
+    line-height: 100%;
+    margin-top: 5vh !important;
+  }
+}

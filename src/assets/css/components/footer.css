@@ -1,0 +1,20 @@
+.footer {
+  width: 100%;
+  text-align: center;
+  margin: 3vh 0 5vh;
+}
+
+.footer h1 {
+  font-weight: 900;
+  font-size: 100%;
+  line-height: 100%;
+  color: #613d2b;
+  letter-spacing: 0.1vw;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .footer {
+    margin-top: 10vh;
+  }
+}
