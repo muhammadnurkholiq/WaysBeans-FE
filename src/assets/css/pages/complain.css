@@ -163,11 +163,6 @@
   overflow-x: hidden;
 }
 
-.complain .message .messageField .messageList .scrollable {
-  height: 100%;
-  padding-right: 1vw;
-}
-
 .complain .message .messageField .messageList .send {
   display: flex;
   justify-content: flex-end;

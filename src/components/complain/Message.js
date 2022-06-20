@@ -1,7 +1,5 @@
 // react
 import { Card } from "react-bootstrap";
-import ScrollableFeed from "react-scrollable-feed";
-
 // image
 import sendMessageIcon from "../../assets/images/sendMessage-icon.png";
 import imageAdmin from "../../assets/images/favicon.png";
@@ -40,27 +38,25 @@ export default function Message({ contact, user, messages, sendMessage }) {
           {/* message */}
           <div className="messageField">
             <div className="messageList">
-              <ScrollableFeed className="scrollable">
-                {messages.map((item) => (
-                  <>
-                    {item.idSender === user.id ? (
-                      <>
-                        {/* send message */}
-                        <div className="send" key={item.id}>
-                          <Card>{item.message}</Card>
-                        </div>
-                      </>
-                    ) : (
-                      <>
-                        {/* receive message */}
-                        <div className="receive" key={item.id}>
-                          <Card>{item.message}</Card>
-                        </div>
-                      </>
-                    )}
-                  </>
-                ))}
-              </ScrollableFeed>
+              {messages.map((item) => (
+                <>
+                  {item.idSender === user.id ? (
+                    <>
+                      {/* send message */}
+                      <div className="send" key={item.id}>
+                        <Card>{item.message}</Card>
+                      </div>
+                    </>
+                  ) : (
+                    <>
+                      {/* receive message */}
+                      <div className="receive" key={item.id}>
+                        <Card>{item.message}</Card>
+                      </div>
+                    </>
+                  )}
+                </>
+              ))}
             </div>
             {/* input */}
             <form onSubmit={sendMessage} className="messageInput">
