@@ -71,21 +71,18 @@ export default function AdminComplain() {
     }
   };
 
-  useEffect(() => {
-    socket = io(
-      process.env.REACT_APP_SERVER_URL ||
-        "https://waysbeans-app-backend.herokuapp.com/" ||
-        "http://localhost:5000",
-      {
-        auth: {
-          token: localStorage.getItem("token"),
-        },
+  console.log(contacts);
 
-        query: {
-          id: state.user.id,
-        },
-      }
-    );
+  useEffect(() => {
+    socket = io("http://localhost:5000", {
+      auth: {
+        token: localStorage.getItem("token"),
+      },
+
+      query: {
+        id: state.user.id,
+      },
+    });
 
     socket.on("new message", () => {
       console.log("contact : ", contact);

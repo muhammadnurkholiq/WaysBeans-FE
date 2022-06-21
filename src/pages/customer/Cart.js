@@ -15,6 +15,7 @@ import "../../assets/css/pages/customer/cart.css";
 // component
 import CustomerNavbar from "../../components/navbar/CustomerNavbar";
 import Footer from "../../components/Footer";
+import ConfirmationModal from "../../components/modal/ConfirmationModal";
 
 // image
 import TrashIcon from "../../assets/images/trash-icon.png";
@@ -24,13 +25,27 @@ export default function Cart() {
   // navigate
   let navigate = useNavigate();
   // state
+  const [id, setId] = useState(null);
   const [loading, setLoading] = useState(true);
   const [carts, setCarts] = useState([]);
+  const [show, setShow] = useState(false);
   const [total, setTotal] = useState({
     qty: "",
     subTotal: "",
   });
   const [image, setImage] = useState(null);
+
+  // handle show modal
+  const handleShow = (id) => {
+    setShow(true);
+    setId(id);
+  };
+
+  // handle close modal
+  const handleClose = () => {
+    setShow(false);
+    setId(id);
+  };
 
   // get profile
   const getProfile = async () => {
@@ -140,19 +155,24 @@ export default function Cart() {
   };
 
   // handle delete qty
-  const handleDelete = async (id) => {
+  const handleDelete = useMutation(async (e) => {
     try {
+      e.preventDefault();
+      setLoading(true);
+      handleClose();
+
       // API update
       const response = await API.delete(`/cart/${id}`);
 
       // response
       if (response.data.status === "Success") {
         getCarts();
+        setLoading(false);
       }
     } catch (error) {
       console.log(error);
     }
-  };
+  });
 
   useEffect(() => {
     //change this to the script source you want to load, for example this is snap.js sandbox env
@@ -261,7 +281,7 @@ export default function Cart() {
             <h1>{convertRupiah.convert(item.product.price)}</h1>
             <button
               onClick={() => {
-                handleDelete(item.product.id);
+                handleShow(item.product.id);
               }}
             >
               <img src={TrashIcon} alt="delete" />
@@ -349,6 +369,13 @@ export default function Cart() {
       </div>
       {/* footer */}
       <Footer />
+      {/* modal */}
+      <ConfirmationModal
+        show={show}
+        message="Are you sure you want to delete this product?"
+        handleClose={handleClose}
+        handleSubmit={(e) => handleDelete.mutate(e)}
+      />
     </>
   );
 }
